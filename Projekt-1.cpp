@@ -16,7 +16,7 @@ int main() {
         scanf("%d", &wartosc);
     }
 
-    // losujemy 24 liczb z zakresu 1-6
+    // losujemy 28 liczb z zakresu 1-6
 
     for (int i=0; i<28; i++) {
         wyniki[i] = (rand()%6) + 1;
@@ -29,6 +29,6 @@ int main() {
     }
     printf("\n");
 
-    printf("trafione: %d/24 razy\n", trafione); // wyswietlamy informacje
-    printf("WYNIK: %d%%\n", (trafione*100/28 ));  // obliczamy jaki procent z 24 losowan to wybrana przez nas wartosc
+    printf("trafione: %d/28 razy\n", trafione); // wyswietlamy informacje
+    printf("WYNIK: %d%%\n", (trafione*100/28 ));  // obliczamy jaki procent z 28 losowan to wybrana przez nas wartosc
     return 0;
