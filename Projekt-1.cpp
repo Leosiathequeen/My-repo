@@ -5,7 +5,7 @@
 int main() {
     // zmienne pomocnicze
     int wartosc = 0;
-    int wyniki[28];
+    int wyniki[24];
     int trafione = 0;
 
     srand(time(NULL)); //inicjumemy generator liczb losowych, bez tego liczby losowane byłyby zawsze takie same
@@ -18,7 +18,7 @@ int main() {
 
     // losujemy 28 liczb z zakresu 1-6
 
-    for (int i=0; i<28; i++) {
+    for (int i=0; i<24; i++) {
         wyniki[i] = (rand()%6) + 1;
         printf("%d ", wyniki[i]); // wyswietlamy wynik losowania
 
@@ -29,6 +29,6 @@ int main() {
     }
     printf("\n");
 
-    printf("trafione: %d/28 razy\n", trafione); // wyswietlamy informacje
-    printf("WYNIK: %d%%\n", (trafione*100/28 ));  // obliczamy jaki procent z 28 losowan to wybrana przez nas wartosc
+    printf("trafione: %d/24 razy\n", trafione); // wyswietlamy informacje
+    printf("WYNIK: %d%%\n", (trafione*100/24 ));  // obliczamy jaki procent z 24 losowan to wybrana przez nas wartosc
     return 0;
